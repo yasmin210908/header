@@ -55,3 +55,25 @@ header {
   color: var(--color-primary);
   text-shadow: var(--text-glow);
 }
+
+.header-controls input:focus {
+  box-shadow: var(--shadow-soft);
+}
+
+button {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 6px 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  box-shadow: var(--shadow-intense);
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
