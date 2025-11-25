@@ -1,0 +1,57 @@
+/* Variáveis globais */
+:root {
+  /* Cores principais */
+  --color-bg: #0a0a0a;
+  --color-text: #e6e6e6;
+  --color-primary: #0f0;
+  --color-header-bg: #111;
+  --color-hover-text: #fff;
+
+  /* Bordas e sombras */
+  --border-radius: 8px;
+  --shadow-intense: 0 0 20px var(--color-primary);
+  --shadow-soft: 0 0 5px var(--color-primary), 0 0 15px var(--color-primary);
+  --text-glow: 0 0 5px var(--color-primary), 0 0 15px var(--color-primary),
+    0 0 30px var(--color-primary);
+
+  /* Espaçamento */
+  --padding-main: 40px;
+  --padding-header: 15px 40px;
+}
+
+/* Estilos Gerais */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+main {
+  padding: var(--padding-main);
+  text-align: center;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-header);
+  background-color: var(--color-header-bg);
+  border-bottom: 2px solid var(--color-primary);
+  box-shadow: var(--shadow-intense);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  text-align: center;
+  gap: 10px;
+  font-size: 1.0rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  text-shadow: var(--text-glow);
+}
