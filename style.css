@@ -54,6 +54,53 @@ header {
   font-weight: bold;
   color: var(--color-primary);
   text-shadow: var(--text-glow);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  padding: 5px 10px;
+  box-shadow: var(--shadow-intense);
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+  border-radius: var(--border-radius);
+}
+
+.nav-links a {
+  margin: 0 20px;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: var(--text-glow);
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--color-hover-text);
+  text-shadow: 0 0 12px var(--color-primary);
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-controls input,
+.header-controls select {
+  padding: 6px 10px;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  color: var(--color-primary);
+  outline: none;
+  text-shadow: var(--text-glow);
+  transition: 0.3s;
+}
+
+.header-controls input::placeholder {
+  color: var(--color-primary);
+  opacity: 0.7;
 }
 
 .header-controls input:focus {
